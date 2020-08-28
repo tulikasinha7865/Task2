@@ -1,0 +1,555 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     
+
+    <title>Hosting Ultra So</title>
+ 
+ <style>
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+	/* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr { 
+		display: none;
+	}
+	
+	tr { border: 1px solid #ccc; }
+	
+	td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+	}
+	
+	td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+	}
+	
+	/*
+	Label the data
+	*/
+	td:nth-of-type(1):before { content: ""; }
+	td:nth-of-type(2):before { content: "Processor"; }
+	td:nth-of-type(3):before { content: "Hard Drive"; }
+	td:nth-of-type(4):before { content: "RAM"; }
+	td:nth-of-type(5):before { content: "Price"; }
+}
+
+#dropdownMenuButton{
+    background:#1B3F8B;
+    border:0px;
+    font-size:1vw;
+}
+
+#div1{
+    text-align: center;
+    width:60%;
+    color:#1B3F8B;
+}
+#div2{
+    text-align: center;
+    width:50%;
+    color:#696969;
+}
+#div3{
+    margin-left:10%;
+    width:80%;
+}
+#div4{
+    margin-left:10%;
+    width:80%;
+}
+#t1{
+  background:#1B3F8B;
+  color:#ffffff;
+  text-align:center;  
+}
+.table{
+    width:80%;
+    margin-left:10%;
+    margin-top:3%;
+    border-collapse: separate;
+    border-spacing: 0 5px;
+}
+td{
+    text-align:center;
+    color:	#0000FF;
+}
+
+#odd{
+   background:#B0E0E6;
+}
+#even{
+   background:#DCDCDC;
+}
+ </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm navbar-light bg-lignt" style="background:#1B3F8B;">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-fa fa-angle-down-icon" style="color:#ffffff;margin-left:50%;"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item">
+        <a class="nav-link" href="#" style="color:#ffffff;font-size:1vw;">sales@hostingultraso.com</a>
+      </li>
+    </ul>
+
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0" style="margin-left:60%;">
+      <li class="nav-item">
+        <a class="nav-link" href="#" style="color:#ffffff;">24/7/365 Support</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" style="color:#ffffff;"><i class="fa fa-facebook"></i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" style="color:#ffffff;"><i class="fa fa-twitter"></i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" style="color:#ffffff;"><i class="fa fa-linkedin"></i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" style="color:#ffffff;"><i class="fa fa-user"></i>Login</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<nav class="navbar navbar-expand-sm navbar-light bg-lignt" style="background:#1B3F8B;" id="nav2">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon" style="color:#ffffff;"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+  <a class="navbar-brand" href="#"><img src="img/a1.png" width="170" style="margin-left:2%;"></a>
+
+  <ul class="nav" style="margin-left:10%;">
+  <li class="nav-item">
+    <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Dedicated Server
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Action</a>
+    <a class="dropdown-item" href="#">Another action</a>
+    <a class="dropdown-item" href="#">Something else here</a>
+  </div>
+</div>
+</li>
+
+  <li class="nav-item">
+    <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+   Game Server
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Action</a>
+    <a class="dropdown-item" href="#">Another action</a>
+    <a class="dropdown-item" href="#">Something else here</a>
+  </div>
+</div>
+</li>
+
+  <li class="nav-item">
+    <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+   Specialized Server
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Action</a>
+    <a class="dropdown-item" href="#">Another action</a>
+    <a class="dropdown-item" href="#">Something else here</a>
+  </div>
+</div>
+</li>
+
+  <li class="nav-item">
+    <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Data Center Colocation
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Action</a>
+    <a class="dropdown-item" href="#">Another action</a>
+    <a class="dropdown-item" href="#">Something else here</a>
+  </div>
+</div>
+</li>
+
+  <li class="nav-item">
+    <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Special Features
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Action</a>
+    <a class="dropdown-item" href="#">Another action</a>
+    <a class="dropdown-item" href="#">Something else here</a>
+  </div>
+</div>
+</li>
+
+  <li class="nav-item">
+    <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Contact Us
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Action</a>
+    <a class="dropdown-item" href="#">Another action</a>
+    <a class="dropdown-item" href="#">Something else here</a>
+  </div>
+</div>
+</li>
+
+  <li class="nav-item">
+    <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Shopping Cart
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Action</a>
+    <a class="dropdown-item" href="#">Another action</a>
+    <a class="dropdown-item" href="#">Something else here</a>
+  </div>
+</div>
+</li>
+    
+  </div>
+</nav>
+
+<nav class="navbar navbar-light " style="background:#1B3F8B;">
+  <h2 style="color:#ffffff;margin-left:30%;" >Dedicated Server in North America</h2>
+</nav>
+
+<br><br>
+<div class="container-fluid" id="div1">
+  <h3 >Choose Dedicated Server from our Best Dedicated Server in North America Data Center</h3>
+</div>
+<div class="container-fluid" id="div2">
+  <h3 >Get <b> Lowest Latency Rate </b>When Your Dedicated Server in North America Customer Visit Your Mission Critical Application</h3>
+</div>
+
+
+<div class="table-responsive">
+  <table class="table">
+    <thead>
+    <tr id="t1">
+    <th>Server Location</th>
+    <th>Processor</th>
+    <th>Hard Drive</th>
+    <th>RAM</th>
+    <th>Price</th>
+    </tr>
+    </thead>
+
+    <tr id="odd">
+    <td id="even"><img src="img/a3.png" style="margin-left:4%;"><br>
+    Seattle
+    </td>
+    <td><img src="img/a2.png" style="margin-left:5%;"><br>
+    Intel Xeon L5420 2.5 GHz 4 cores</td>
+    <td>1× 500 GB (HDD SATA)</td>
+    <td>16 GB DDR2</td>
+    <td>$43.20<br>
+    <button type="button" class="btn btn-danger btn-sm">See Details</button>
+    </td>
+    </tr>
+
+     <tr id="even">
+    <td id="odd"><img src="img/a3.png" style="margin-left:4%;"><br>
+    Seattle
+    </td>
+    <td><img src="img/a2.png" style="margin-left:5%;"><br>
+    Intel Xeon L5420 2.5 GHz 4 cores</td>
+    <td>1× 500 GB (HDD SATA)</td>
+    <td>16 GB DDR2</td>
+    <td>$43.20<br>
+    <button type="button" class="btn btn-danger btn-sm">See Details</button>
+    </td>
+    </tr>
+
+     <tr id="odd">
+    <td id="even"><img src="img/a4.png" style="margin-left:4%;"><br>
+    Seattle
+    </td>
+    <td><img src="img/a2.png" style="margin-left:5%;"><br>
+    Intel Xeon L5420 2.5 GHz 4 cores</td>
+    <td>1× 500 GB (HDD SATA)</td>
+    <td>16 GB DDR2</td>
+    <td>$43.20<br>
+    <button type="button" class="btn btn-danger btn-sm">See Details</button>
+    </td>
+    </tr>
+
+     <tr id="even">
+    <td id="odd"><img src="img/a3.png" style="margin-left:4%;"><br>
+    Seattle
+    </td>
+    <td><img src="img/a2.png" style="margin-left:5%;"><br>
+    Intel Xeon L5420 2.5 GHz 4 cores</td>
+    <td>1× 500 GB (HDD SATA)</td>
+    <td>16 GB DDR2</td>
+    <td>$43.20<br>
+    <button type="button" class="btn btn-danger btn-sm">See Details</button>
+    </td>
+    </tr>
+
+     <tr id="odd">
+    <td id="even"><img src="img/a3.png" style="margin-left:4%;"><br>
+    Seattle
+    </td>
+    <td><img src="img/a2.png" style="margin-left:5%;"><br>
+    Intel Xeon L5420 2.5 GHz 4 cores</td>
+    <td>1× 500 GB (HDD SATA)</td>
+    <td>16 GB DDR2</td>
+    <td>$43.20<br>
+    <button type="button" class="btn btn-danger btn-sm">See Details</button>
+    </td>
+    </tr>
+
+     <tr id="even">
+    <td id="odd"><img src="img/a3.png" style="margin-left:4%;"><br>
+    Seattle
+    </td>
+    <td><img src="img/a2.png" style="margin-left:5%;"><br>
+    Intel Xeon L5420 2.5 GHz 4 cores</td>
+    <td>1× 500 GB (HDD SATA)</td>
+    <td>16 GB DDR2</td>
+    <td>$43.20<br>
+    <button type="button" class="btn btn-danger btn-sm">See Details</button>
+    </td>
+    </tr>
+
+     <tr id="odd">
+    <td id="even"><img src="img/a3.png" style="margin-left:4%;"><br>
+    Seattle
+    </td>
+    <td><img src="img/a2.png" style="margin-left:5%;"><br>
+    Intel Xeon L5420 2.5 GHz 4 cores</td>
+    <td>1× 500 GB (HDD SATA)</td>
+    <td>16 GB DDR2</td>
+    <td>$43.20<br>
+    <button type="button" class="btn btn-danger btn-sm">See Details</button>
+    </td>
+    </tr>
+
+     <tr id="even">
+    <td id="odd"><img src="img/a3.png" style="margin-left:4%;"><br>
+    Seattle
+    </td>
+    <td><img src="img/a2.png" style="margin-left:5%;"><br>
+    Intel Xeon L5420 2.5 GHz 4 cores</td>
+    <td>1× 500 GB (HDD SATA)</td>
+    <td>16 GB DDR2</td>
+    <td>$43.20<br>
+    <button type="button" class="btn btn-danger btn-sm">See Details</button>
+    </td>
+    </tr>
+
+     <tr id="odd">
+    <td id="even"><img src="img/a3.png" style="margin-left:4%;"><br>
+    Seattle
+    </td>
+    <td><img src="img/a2.png" style="margin-left:5%;"><br>
+    Intel Xeon L5420 2.5 GHz 4 cores</td>
+    <td>1× 500 GB (HDD SATA)</td>
+    <td>16 GB DDR2</td>
+    <td>$43.20<br>
+    <button type="button" class="btn btn-danger btn-sm">See Details</button>
+    </td>
+    </tr>
+
+     <tr id="even">
+    <td id="odd"><img src="img/a3.png" style="margin-left:4%;"><br>
+    Seattle
+    </td>
+    <td><img src="img/a2.png" style="margin-left:5%;"><br>
+    Intel Xeon L5420 2.5 GHz 4 cores</td>
+    <td>1× 500 GB (HDD SATA)</td>
+    <td>16 GB DDR2</td>
+    <td>$43.20<br>
+    <button type="button" class="btn btn-danger btn-sm">See Details</button>
+    </td>
+    </tr>
+
+     <tr id="odd">
+    <td id="even"><img src="img/a3.png" style="margin-left:4%;"><br>
+    Seattle
+    </td>
+    <td><img src="img/a2.png" style="margin-left:5%;"><br>
+    Intel Xeon L5420 2.5 GHz 4 cores</td>
+    <td>1× 500 GB (HDD SATA)</td>
+    <td>16 GB DDR2</td>
+    <td>$43.20<br>
+    <button type="button" class="btn btn-danger btn-sm">See Details</button>
+    </td>
+    </tr>
+
+     <tr id="even">
+    <td id="odd"><img src="img/a3.png" style="margin-left:4%;"><br>
+    Seattle
+    </td>
+    <td><img src="img/a2.png" style="margin-left:5%;"><br>
+    Intel Xeon L5420 2.5 GHz 4 cores</td>
+    <td>1× 500 GB (HDD SATA)</td>
+    <td>16 GB DDR2</td>
+    <td>$43.20<br>
+    <button type="button" class="btn btn-danger btn-sm">See Details</button>
+    </td>
+    </tr>
+
+     <tr id="odd">
+    <td id="even"><img src="img/a3.png" style="margin-left:4%;"><br>
+    Seattle
+    </td>
+    <td><img src="img/a2.png" style="margin-left:5%;"><br>
+    Intel Xeon L5420 2.5 GHz 4 cores</td>
+    <td>1× 500 GB (HDD SATA)</td>
+    <td>16 GB DDR2</td>
+    <td>$43.20<br>
+    <button type="button" class="btn btn-danger btn-sm">See Details</button>
+    </td>
+    </tr>
+
+     <tr id="even">
+    <td id="odd"><img src="img/a3.png" style="margin-left:4%;"><br>
+    Seattle
+    </td>
+    <td><img src="img/a2.png" style="margin-left:5%;"><br>
+    Intel Xeon L5420 2.5 GHz 4 cores</td>
+    <td>1× 500 GB (HDD SATA)</td>
+    <td>16 GB DDR2</td>
+    <td>$43.20<br>
+    <button type="button" class="btn btn-danger btn-sm">See Details</button>
+    </td>
+    </tr>
+
+     <tr id="odd">
+    <td id="even"><img src="img/a3.png" style="margin-left:4%;"><br>
+    Seattle
+    </td>
+    <td><img src="img/a2.png" style="margin-left:5%;"><br>
+    Intel Xeon L5420 2.5 GHz 4 cores</td>
+    <td>1× 500 GB (HDD SATA)</td>
+    <td>16 GB DDR2</td>
+    <td>$43.20<br>
+    <button type="button" class="btn btn-danger btn-sm">See Details</button>
+    </td>
+    </tr>
+
+     <tr id="even">
+    <td id="odd"><img src="img/a3.png" style="margin-left:4%;"><br>
+    Seattle
+    </td>
+    <td><img src="img/a2.png" style="margin-left:5%;"><br>
+    Intel Xeon L5420 2.5 GHz 4 cores</td>
+    <td>1× 500 GB (HDD SATA)</td>
+    <td>16 GB DDR2</td>
+    <td>$43.20<br>
+    <button type="button" class="btn btn-danger btn-sm">See Details</button>
+    </td>
+    </tr>
+
+     <tr id="odd">
+    <td id="even"><img src="img/a3.png" style="margin-left:4%;"><br>
+    Seattle
+    </td>
+    <td><img src="img/a2.png" style="margin-left:5%;"><br>
+    Intel Xeon L5420 2.5 GHz 4 cores</td>
+    <td>1× 500 GB (HDD SATA)</td>
+    <td>16 GB DDR2</td>
+    <td>$43.20<br>
+    <button type="button" class="btn btn-danger btn-sm">See Details</button>
+    </td>
+    </tr>
+
+     <tr id="even">
+    <td id="odd"><img src="img/a3.png" style="margin-left:4%;"><br>
+    Seattle
+    </td>
+    <td><img src="img/a5.png" style="margin-left:5%;"><br>
+    Intel Xeon L5420 2.5 GHz 4 cores</td>
+    <td>1× 500 GB (HDD SATA)</td>
+    <td>16 GB DDR2</td>
+    <td>$43.20<br>
+    <button type="button" class="btn btn-danger btn-sm">See Details</button>
+    </td>
+    </tr>
+
+     <tr id="odd">
+    <td id="even"><img src="img/a3.png" style="margin-left:4%;"><br>
+    Seattle
+    </td>
+    <td><img src="img/a2.png" style="margin-left:5%;"><br>
+    Intel Xeon L5420 2.5 GHz 4 cores</td>
+    <td>1× 500 GB (HDD SATA)</td>
+    <td>16 GB DDR2</td>
+    <td>$43.20<br>
+    <button type="button" class="btn btn-danger btn-sm">See Details</button>
+    </td>
+    </tr>
+
+     <tr id="even">
+    <td id="odd"><img src="img/a3.png" style="margin-left:4%;"><br>
+    Seattle
+    </td>
+    <td><img src="img/a2.png" style="margin-left:5%;"><br>
+    Intel Xeon L5420 2.5 GHz 4 cores</td>
+    <td>1× 500 GB (HDD SATA)</td>
+    <td>16 GB DDR2</td>
+    <td>$43.20<br>
+    <button type="button" class="btn btn-danger btn-sm">See Details</button>
+    </td>
+    </tr>
+
+  </table>
+</div>
+
+<div class="container-fluid" id="div3">
+  <h3 style="color:	#696969;">Why choose Dedicated Servers?</h3>
+  <p>A dedicated server is a powerful server hosting solution for a business to grow and get more success. Business becomes more fluid and flexible. A dedicated server hosting provides your business website to have more secure, flexible, customization tools and resources than shared servers.</p>
+    <h3 style="color:		#696969;">Business and Technology In North America:</h3>
+   <p>North America has now become one of trending business continents with a variety of businesses spread over different countries that are making them hugely successful and fully self-dependent. Hence, our data center located in the North America region is kept in so way to benefit different business websites with the best-dedicated server solutions. Our technical team, managing staff, billing staff are there 24/7 to help you whenever you require our help. There is an advanced security monitoring, biometric access, etc. associated with our data centres and a High-speed network connection makes the servers work faster.</p>
+   <h3 style="color:		#696969;">Why choose a Dedicated Server in North America?</h3>
+   <p>If you have a business website that is constantly growing on a large scale with increasing traffic then you will definitely look for a dedicated server hosting solution for your website to perform better way. </p>
+   <p>Our dedicated servers in North America will be very effective and helpful to make your business website to have more customer engagement and business- friendliness.</p>
+   <p>If your business application needs more customization, security management, flexible tools, and resources then we have the best-dedicated server hosting solution for you.</p>
+   <p>The Hosting Ultraso is there for you with its servers spread over 119+ countries including those of Seattle, Montreal, Phoenix, Toronto, Denver, Dallas, Las Vegas, Ashburn, Los Angeles, Atlanta, Washington D.C, Miami, Charlotte, New York City, Portland, Chicago, St. Louis, Vancouver in North America.</p>
+   <p>You get the lowest latency rate with Hosting Ultraso whenever your clients visiting your website.</p>
+   <p>Note that Hosting Ultrso Providing all the options like an option for having a cheap dedicated server, branch of servers for building your own cloud server, Content Delivery Network as you need. What are the types of Operating System provided?</p>
+</div>
+<div class="container-fluid" id="div4">
+
+</div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>
